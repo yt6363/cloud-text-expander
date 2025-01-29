@@ -1,5 +1,71 @@
 # cloud-text-expander
-A powerful text expansion tool with AI integration (OpenAI/Gemini), date/time shortcuts, and clipboard automation.
+A powerful text expansion tool with AI integration (OpenAI/Gemini), date/time shortcuts, and clipboard automation
+
+📌 Cloud Text Expander
+ ├── 🏠 Main Components
+ │   ├── 🎨 GUI (Tkinter)
+ │   │   ├── Snippet Management
+ │   │   │   ├── Add Snippet
+ │   │   │   ├── Edit Snippet
+ │   │   │   ├── Delete Snippet
+ │   │   │   ├── View Saved Snippets
+ │   │   ├── AI Integration Settings
+ │   │   │   ├── OpenAI API Key Input
+ │   │   │   ├── Gemini API Key Input
+ │   │   │   ├── Save/Delete API Key
+ │   │   ├── Theme Selection
+ │   │   │   ├── Dark Mode
+ │   │   │   ├── Light Mode
+ │   │   │   ├── System Default
+ │
+ │   ├── 🖥️ Key Listener (pynput)
+ │   │   ├── Detect Shortcuts
+ │   │   │   ├── Custom User Snippets
+ │   │   │   ├── Predefined Snippets
+ │   │   │   │   ├── @@date → Inserts Date
+ │   │   │   │   ├── @@time → Inserts Time
+ │   │   │   │   ├── @@ask [Query] → AI Response
+ │   │   ├── Clipboard Automation (pyperclip)
+ │   │   │   ├── Copy Shortcut Replacement
+ │   │   │   ├── Paste to Active Window
+ │
+ │   ├── 📂 Database (Firebase / Local JSON)
+ │   │   ├── Store Snippets Locally
+ │   │   ├── Retrieve Snippets
+ │   │   ├── Sync with Cloud (Optional)
+ │
+ ├── 🤖 AI Integration
+ │   ├── OpenAI
+ │   │   ├── GPT-4o-mini
+ │   │   ├── Customizable Prompting
+ │   │   ├── API Key Management
+ │   ├── Google Gemini
+ │   │   ├── Gemini-Pro Model
+ │   │   ├── Text-Based Responses
+ │   │   ├── API Key Storage
+ │
+ ├── ⚙️ Configuration
+ │   ├── Local Storage (`~/.text_expander_config.json`)
+ │   ├── API Key Handling
+ │   ├── User Preferences
+ │
+ ├── 🛠️ Installation & Setup
+ │   ├── Virtual Environment (`venv`)
+ │   ├── Installing Dependencies (`pip install -r requirements.txt`)
+ │   ├── Running the App (`python main.py`)
+ │
+ ├── 🔍 Troubleshooting
+ │   ├── AI Not Responding
+ │   ├── Key Listener Issues (macOS/Windows/Linux)
+ │   ├── Tkinter Errors
+ │   ├── Clipboard Issues
+ │
+ ├── 🚀 Future Enhancements
+ │   ├── Browser Extension
+ │   ├── Multi-Language Support
+ │   ├── Sync Across Devices
+ │
+
 
 📖 Table of Contents
 🔧 Features
